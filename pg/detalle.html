@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../js/script.js"></script>
+
+  </head>
+  <body class="contenedorGlobal">
+    <header>
+      <nav class="navPrincipal">
+        <div>
+          <ul>
+            <li><a href="../index.html" target="_selft">Inicio</a></li>
+            <!-- <li><a href="#2" target="_blank">Nosotros</a></li>
+            <li><a href="#3" target="_blank">Contacto</a></li>
+          </ul> -->
+        </div>
+      </nav>
+    </header>
+    <!-- titulo -->
+    
+  
+<section>
+  <div id="divContenidoDetalle">
+
+  </div>
+</section>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  console.log(urlParams)
+const myParam = urlParams.get('idDetalle');
+console.log(myParam)
+cargoDetalle(myParam);
+</script>
+  </body>
+</html>
