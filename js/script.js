@@ -6,6 +6,11 @@ data = [
     imagen: "ppal.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      { nombre: "Juan", Apelido: "Perez" },
+      { nombre: "Ramon", Apelido: "Perez" },
+      { nombre: "Juana", Apelido: "Perez" },
+    ],
   },
   {
     id: 2,
@@ -79,9 +84,10 @@ function armoListaArticulos() {
       ' <div class="articulo" onclick="abroDetalle(' +
       k +
       ');">' +
-      '<div class="articuloImagen" style=" background-image: url(../img/' +
-      data[k].imagen +
-      ');">"' +
+      // '<div class="articuloImagen" style=" background-image: url(img/' +
+      // data[k].imagen +
+      // ');">"' +
+      '<div class="articuloImagen" > <img src="img/pizarron.jpeg"/>' +
       "<h2>" +
       data[k].nombre +
       "</h2>" +
@@ -93,9 +99,9 @@ function armoListaArticulos() {
       "</span>" +
       "</div>" +
       '<div class="articuloDescripcion">' +
-      "<p>" +
+      "<span>" +
       data[k].descripcion +
-      "</p>" +
+      "</span>" +
       "</div>" +
       "</div>" +
       "</div>";
@@ -104,33 +110,49 @@ function armoListaArticulos() {
   }
 }
 
+function cargoDetalle(k) {
+  document.getElementById("divContenidoDetalle").innerHTML +=
+    ' <div class="imagenPrincipalDetalle"  style=" background-image: url(../img/' +
+    data[k].imagen +
+    ')">' +
+    ' <div class="tituloPrincipal example">' +
+    "<h1>" +
+    data[k].nombre +
+    "</h1><p>Detalle del curso</p>" +
+    "</div> </div> " +
+    '<div class="articuloContenido">' +
+    '<div class="articuloPrecio">' +
+    "<span>" +
+    data[k].precio +
+    "</span>" +
+    "</div>" +
+    '<div class="articuloDescripcion">' +
+    //"<p>" +
+    data[k].descripcion +
+    //"</p>" +
+    "</div>" +
+    "</div>";
+  document.getElementById("divContenidoDetalle").innerHTML +=
+    "<div class='divProfesores'><ul id='ulProfesores'>";
 
-function cargoDetalle(k){
-   document.getElementById("divContenidoDetalle").innerHTML +=
-   ' <div class="imagenPrincipalDetalle"  style=" background-image: url(../img/' +
-   data[k].imagen +
-   ')">' + ' <div class="tituloPrincipal example">'+
-   '<h1>' +
-   data[k].nombre +
-   '</h1><p>Detalle del curso</p>' +
-   '</div> </div> ' +
-   '<div class="articuloContenido">' +
-   '<div class="articuloPrecio">' +
-   "<span>" +
-   data[k].precio +
-   "</span>" +
-   "</div>" +
-   '<div class="articuloDescripcion">' +
-   //"<p>" +
-   data[k].descripcion +
-   //"</p>" +
-   "</div>" +
-   "</div>";
-  }
+  
+  document.getElementById("divContenidoDetalle").innerHTML += "</ul></div>";
+}
 
-  function abroDetalle(detalle){
-      console.log(location.href)
-      // location.href='../pg/detalle.html?idDetalle=' + detalle;
-      window.open('pg/detalle.html?idDetalle='+ detalle,'_self')
-  }
+function cargoProfesores(k){
+  data[k].profesores.forEach((profesor) => {
+    document.getElementById("ulProfesores").innerHTML +=
+      "<li><a onclick='seleccionoProfe(this)' >" + profesor.Apelido + ", " + profesor.nombre + "</a></li>";
+  });
+}
 
+function abroDetalle(detalle) {
+  console.log(location.href);
+  // location.href='../pg/detalle.html?idDetalle=' + detalle;
+  window.open("pg/detalle.html?idDetalle=" + detalle, "_self");
+}
+
+function seleccionoProfe(obj){
+console.log(obj)
+obj.classList.add("activo");
+}
