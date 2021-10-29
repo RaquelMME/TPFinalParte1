@@ -111,8 +111,9 @@ body {
 }
 
 .contenedorGlobal {
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    padding: 0;
     margin-right: auto;
     margin-left: auto;
 }
@@ -220,7 +221,8 @@ body {
     }
 
     .contenedorGlobal {
-        width: 500px;
+        max-width: 500px;
+        width: 100%;
     }
 
 }
@@ -257,7 +259,8 @@ body {
     }
 
     .contenedorGlobal {
-        width: 620px;
+        max-width: 620px;
+        width: 100%;
     }
 
 }
@@ -294,7 +297,8 @@ body {
     }
 
     .contenedorGlobal {
-        width: 750px;
+        max-width: 750px;
+        width: 100%;
     }
 
 }
@@ -332,6 +336,7 @@ body {
     }
 
     .contenedorGlobal {
-        width: 970px;
+        max-width: 970px;
+        width: 100%;
     }
 }
