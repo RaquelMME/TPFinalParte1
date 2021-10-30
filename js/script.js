@@ -90,7 +90,7 @@ data = [
     precio: "$250",
     imagen: "ppal.jpg",
     descripcion:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "qua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     id: 12,
@@ -105,8 +105,10 @@ data = [
 function armoListaArticulos() {
   var i = 0;
   for (var k in data) {
+    if(i>4)
+    i=0;
     document.getElementById("divContenidoArticulos").innerHTML +=
-      ' <div data-aos="fade-up"  data-aos-delay="' +
+      ' <div data-aos="fade-up"  data-aos-delay="0' +
       i +
       '50" class="articulo" onclick="abroDetalle(' +
       k +
@@ -132,7 +134,7 @@ function armoListaArticulos() {
       "</div>" +
       "</div>" +
       "</div>";
-      // i+=1;
+      i+=1;
   }
 }
 
@@ -146,7 +148,7 @@ function cargoDetalle(k) {
     data[k].nombre +
     "</h1><p>Detalle del curso</p>" +
     "</div> </div> " +
-    '<div class="articuloContenido">' +
+    '<div class="divContenedorNosotros" class="articuloContenido">' +
     '<div class="articuloPrecio">' +
     "<span>" +
     data[k].precio +
@@ -185,3 +187,10 @@ function seleccionoProfe(obj) {
   console.log(obj);
   obj.classList.add("activo");
 }
+const nombre = document.getElementById("name")
+const apellido = document.getElementById("name")
+const email = document.getElementById("name")
+const nombreUsuario = document.getElementById("name")
+const password = document.getElementById("name")
+
+
