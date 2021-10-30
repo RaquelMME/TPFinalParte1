@@ -61,7 +61,7 @@ data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
-    id: 5,
+    id: 8,
     nombre: "Clase de Probabilidad y Estadística",
     precio: "$250",
     imagen: "ppal.jpg",
@@ -69,9 +69,33 @@ data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
-    id: 5,
+    id: 9,
     nombre: "Clase de Programación",
     precio: "$400",
+    imagen: "ppal.jpg",
+    descripcion:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    id: 10,
+    nombre: "Clase de Geometría",
+    precio: "$250",
+    imagen: "ppal.jpg",
+    descripcion:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    id: 11,
+    nombre: "Clase de Química",
+    precio: "$250",
+    imagen: "ppal.jpg",
+    descripcion:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    id: 12,
+    nombre: "Clase de Probabilidad y Estadística",
+    precio: "$250",
     imagen: "ppal.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -79,9 +103,12 @@ data = [
 ];
 
 function armoListaArticulos() {
+  var i = 0;
   for (var k in data) {
     document.getElementById("divContenidoArticulos").innerHTML +=
-      ' <div class="articulo" onclick="abroDetalle(' +
+      ' <div data-aos="fade-up"  data-aos-delay="' +
+      i +
+      '50" class="articulo" onclick="abroDetalle(' +
       k +
       ');">' +
       // '<div class="articuloImagen" style=" background-image: url(img/' +
@@ -105,17 +132,16 @@ function armoListaArticulos() {
       "</div>" +
       "</div>" +
       "</div>";
-    console.log(k, data[k]);
-    console.log(k, data[k].id);
+      // i+=1;
   }
 }
 
 function cargoDetalle(k) {
   document.getElementById("divContenidoDetalle").innerHTML +=
-    ' <div class="imagenPrincipalDetalle"  style=" background-image: url(../img/' +
+    ' <div class="divImagenPrincipalDetalle"  style=" background-image: url(../img/' +
     data[k].imagen +
     ')">' +
-    ' <div class="tituloPrincipal example">' +
+    ' <div class="divTituloPrincipal example">' +
     "<h1>" +
     data[k].nombre +
     "</h1><p>Detalle del curso</p>" +
@@ -135,14 +161,17 @@ function cargoDetalle(k) {
   document.getElementById("divContenidoDetalle").innerHTML +=
     "<div class='divProfesores'><ul id='ulProfesores'>";
 
-  
   document.getElementById("divContenidoDetalle").innerHTML += "</ul></div>";
 }
 
-function cargoProfesores(k){
+function cargoProfesores(k) {
   data[k].profesores.forEach((profesor) => {
     document.getElementById("ulProfesores").innerHTML +=
-      "<li><a onclick='seleccionoProfe(this)' >" + profesor.Apelido + ", " + profesor.nombre + "</a></li>";
+      "<li><a onclick='seleccionoProfe(this)' >" +
+      profesor.Apelido +
+      ", " +
+      profesor.nombre +
+      "</a></li>";
   });
 }
 
@@ -152,7 +181,7 @@ function abroDetalle(detalle) {
   window.open("pg/detalle.html?idDetalle=" + detalle, "_self");
 }
 
-function seleccionoProfe(obj){
-console.log(obj)
-obj.classList.add("activo");
+function seleccionoProfe(obj) {
+  console.log(obj);
+  obj.classList.add("activo");
 }
