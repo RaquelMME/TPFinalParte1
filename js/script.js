@@ -105,19 +105,19 @@ data = [
 function armoListaArticulos() {
   var i = 0;
   for (var k in data) {
-    if(i>4)
+    if(i>3)
     i=0;
     document.getElementById("divContenidoArticulos").innerHTML +=
       ' <div data-aos="fade-up"  data-aos-delay="0' +
       i +
-      '50" class="articulo" onclick="abroDetalle(' +
+      '0" class="articulo" onclick="abroDetalle(' +
       k +
       ');">' +
       // '<div class="articuloImagen" style=" background-image: url(img/' +
       // data[k].imagen +
       // ');">"' +
       '<div class="articuloImagen" > <img src="img/pizarron.jpeg"/>' +
-      "<h2>" +
+      '<h2 class="divFuenteImagenDetalle">' +
       data[k].nombre +
       "</h2>" +
       "</div>" +

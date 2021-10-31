@@ -29,11 +29,11 @@
   <header>
     <nav class="navPrincipal">
       <div>
+        <a class="aIniciarSesion" href="iniciarSesion.html" target="_self">Iniciar Sesión</a>
         <ul>
           <li><a href="../index.html" target="_self">Inicio</a></li>
           <li><a href="nosotros.html" target="_self">Nosotros</a></li>
           <li><a href="contacto.html" target="_self" class="activo">Contacto</a></li>
-          <li><a class="aIniciarSesion" href="iniciarSesion.html" target="_self">Iniciar Sesión</a></li>
         </ul>
       </div>
     </nav>
@@ -144,8 +144,8 @@
               <label><input type="checkbox" /> Remember me</label>
             </div>
             <div class="form-group">
-              <label class="control-label"><span class="text-danger">*</span> Mensaje</label>
-              <textarea class="form-control red ng-pristine ng-untouched ng-valid ng-empty" ng-model="mensaje"
+              <label class="control-label"><span class="text-danger">*</span></label>
+              <textarea placeholder="Mensaje" aria-label="Escriba-tu-mensaje" class="form-control red ng-pristine ng-untouched ng-valid ng-empty" ng-model="mensaje"
                 name="mensaje" data-validate="required" rows="10" novalidate="novalidate"
                 aria-invalid="false"></textarea>
             </div>
