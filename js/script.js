@@ -106,11 +106,9 @@ function armoListaArticulos() {
   var i = 0;
   for (var k in data) {
     if(i>3)
-    i=0;
+     i = 0;
     document.getElementById("divContenidoArticulos").innerHTML +=
-      ' <div data-aos="fade-up"  data-aos-delay="0' +
-      i +
-      '0" class="articulo" onclick="abroDetalle(' +
+      '<div data-aos="fade-up"  data-aos-delay="0' + i + '50" class="articulo" onclick="abroDetalle(' +
       k +
       ');">' +
       // '<div class="articuloImagen" style=" background-image: url(img/' +
