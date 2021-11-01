@@ -3,13 +3,30 @@ data = [
     id: 1,
     nombre: "Clase de Ingles",
     precio: "$250",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     profesores: [
-      { nombre: "Juan", Apelido: "Perez" },
-      { nombre: "Ramon", Apelido: "Perez" },
-      { nombre: "Juana", Apelido: "Perez" },
+      {
+        nombre: "Juan",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Julio",
+        Apelido: "López",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
     ],
   },
   {
@@ -19,96 +36,328 @@ data = [
     imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Clemmie",
+        Apellido: "Windridge",
+      },
+      {
+        nombre: "Guthrey",
+        Apellido: "Trood",
+      },
+      {
+        nombre: "Georgy",
+        Apellido: "Benoi",
+      },
+      {
+        nombre: "Cyrillus",
+        Apellido: "Gillison",
+      },
+      {
+        nombre: "Hamil",
+        Apellido: "Blacklock",
+      },
+    ],
   },
   {
     id: 3,
     nombre: "Clase de Frances",
     precio: "$200",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Juan",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Fernandez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+    ],
   },
   {
     id: 4,
     nombre: "Clase de Algebra",
     precio: "$350",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Sasha",
+        Apellido: "Barttrum",
+      },
+      {
+        nombre: "Clevie",
+        Apellido: "Roubert",
+      },
+      {
+        nombre: "Ferne",
+        Apellido: "Davidovich",
+      },
+      {
+        nombre: "Morley",
+        Apellido: "Davidwitz",
+      },
+      {
+        nombre: "Joline",
+        Apellido: "Terran",
+      },
+      {
+        nombre: "Godfry",
+        Apellido: "Lomansey",
+      },
+      {
+        nombre: "Donica",
+        Apellido: "Markovich",
+      },
+    ],
   },
   {
     id: 5,
     nombre: "Clase de Historia",
     precio: "$200",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Juan",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+    ],
   },
   {
     id: 6,
     nombre: "Clase de Geometría",
     precio: "$250",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Othilia",
+        Apellido: "Olczak",
+      },
+      {
+        nombre: "Wendi",
+        Apellido: "Spink",
+      },
+      {
+        nombre: "Tommie",
+        Apellido: "Plumtree",
+      },
+      {
+        nombre: "Magdalene",
+        Apellido: "Illem",
+      },
+    ],
   },
   {
     id: 7,
     nombre: "Clase de Química",
     precio: "$250",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Hewet",
+        Apellido: "Crippen",
+      },
+      {
+        nombre: "Roobbie",
+        Apellido: "Ashness",
+      },
+      {
+        nombre: "Cindelyn",
+        Apellido: "Strute",
+      },
+    ],
   },
   {
     id: 8,
     nombre: "Clase de Probabilidad y Estadística",
     precio: "$250",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Juan",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+    ],
   },
   {
     id: 9,
     nombre: "Clase de Programación",
     precio: "$400",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Juan",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+    ],
   },
   {
     id: 10,
     nombre: "Clase de Geometría",
     precio: "$250",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Juan",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+    ],
   },
   {
     id: 11,
     nombre: "Clase de Química",
     precio: "$250",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "qua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+    profesores: [
+      {
+        nombre: "Juan",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+    ],
   },
   {
     id: 12,
     nombre: "Clase de Probabilidad y Estadística",
     precio: "$250",
-    imagen: "ppal.jpg",
+    imagen: "mate3.jpg",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profesores: [
+      {
+        nombre: "Juan",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Ramon",
+        Apelido: "Perez",
+      },
+      {
+        nombre: "Juana",
+        Apelido: "Perez",
+      },
+    ],
   },
 ];
 
 function armoListaArticulos() {
   var i = 0;
   for (var k in data) {
-    if(i>3)
-     i = 0;
+    if (i > 3) i = 0;
     document.getElementById("divContenidoArticulos").innerHTML +=
-      '<div data-aos="fade-up"  data-aos-delay="0' + i + '50" class="articulo" onclick="abroDetalle(' +
+      '<div data-aos="fade-up" data-aos-delay="' +
+      i +
+      '50" class="articulo" onclick="abroDetalle(' +
       k +
       ');">' +
       // '<div class="articuloImagen" style=" background-image: url(img/' +
@@ -132,7 +381,7 @@ function armoListaArticulos() {
       "</div>" +
       "</div>" +
       "</div>";
-      i+=1;
+    i += 1;
   }
 }
 
@@ -185,10 +434,30 @@ function seleccionoProfe(obj) {
   console.log(obj);
   obj.classList.add("activo");
 }
-const nombre = document.getElementById("name")
-const apellido = document.getElementById("name")
-const email = document.getElementById("name")
-const nombreUsuario = document.getElementById("name")
-const password = document.getElementById("name")
 
+function enviarInfo() {
+  var nombre = document.getElementById("nombre");
+  var apellido = document.getElementById("apellido");
+  var email = document.getElementById("email");
+  var nombreUsuario = document.getElementById("nombreUsuario");
+  var password = document.getElementById("password");
+  if (
+    nombre.value.trim() == "" ||
+    apellido.value.trim() == "" ||
+    nombreUsuario.value.trim() == "" ||
+    password.value.trim() == ""
+  )
+    alert("Complete los campos obligatorios");
+  else alert("Enviado correctamente");
+}
 
+function ingresar() {
+  var nombreUsuario = document.getElementById("nombreUsuario");
+  var password = document.getElementById("password");
+  if (nombreUsuario.value.trim() == "" || password.value.trim() == "")
+    alert("Complete los campos obligatorios");
+  else {
+    window.location.href = "../index.html";
+    alert("Enviado correctamente");
+  }
+}

@@ -107,14 +107,23 @@ header {
 .articuloImagen img {
   width: 100%;
   height: 100%;
+  position: relative;
 }
+.divFuenteImagenDetalle {
+  font-family: 'Gloria Hallelujah', cursive;
+    position: absolute;
+    top: -70%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+  }
 
 .articuloImagen h2 {
   position: relative;
-  top: -125px;
+  /* top: -170px; */
   color: wheat;
-  max-width: 70%;
-  left: 30px;
+  font-size: 1.6rem;
+  /* max-width: 70%; */
+  /* left: 30px; */
 }
 
 .articulo {
@@ -254,9 +263,24 @@ header {
   padding: 10px;
 }
 
-.divFuenteImagenDetalle {
-  font-family: 'Gloria Hallelujah', cursive;
 
+
+
+
+.hrLinea {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset !important;
+  border-width: 1px !important;
+}
+
+.hr {
+  clear: all;
 }
 
 @media only screen and (max-width: 600px) {
@@ -351,6 +375,7 @@ header {
   .aIniciarSesion {
     float: right;
   }
+
   .aIniciarSesion,
   .btnInicio,
   .btnEnviar {
