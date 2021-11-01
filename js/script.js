@@ -9,23 +9,23 @@ data = [
     profesores: [
       {
         nombre: "Juan",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Julio",
-        Apelido: "López",
+        Apellido: "López",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
     ],
   },
@@ -69,15 +69,15 @@ data = [
     profesores: [
       {
         nombre: "Juan",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Fernandez",
+        Apellido: "Fernandez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
     ],
   },
@@ -129,39 +129,39 @@ data = [
     profesores: [
       {
         nombre: "Juan",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
     ],
   },
@@ -223,15 +223,15 @@ data = [
     profesores: [
       {
         nombre: "Juan",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
     ],
   },
@@ -245,31 +245,31 @@ data = [
     profesores: [
       {
         nombre: "Juan",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
     ],
   },
@@ -283,15 +283,15 @@ data = [
     profesores: [
       {
         nombre: "Juan",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
     ],
   },
@@ -306,23 +306,23 @@ data = [
     profesores: [
       {
         nombre: "Juan",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
     ],
   },
@@ -336,15 +336,15 @@ data = [
     profesores: [
       {
         nombre: "Juan",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Ramon",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
       {
         nombre: "Juana",
-        Apelido: "Perez",
+        Apellido: "Perez",
       },
     ],
   },
@@ -417,7 +417,7 @@ function cargoProfesores(k) {
   data[k].profesores.forEach((profesor) => {
     document.getElementById("ulProfesores").innerHTML +=
       "<li><a onclick='seleccionoProfe(this)' >" +
-      profesor.Apelido +
+      profesor.Apellido +
       ", " +
       profesor.nombre +
       "</a></li>";
