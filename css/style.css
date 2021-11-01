@@ -94,7 +94,7 @@ header {
 .divImagenPrincipal,
 .divImagenPrincipalDetalle {
   height: 60vh;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,20 +104,23 @@ header {
   background-image: url("../img/ppal.jpg");
 }
 
-.articuloImagen img {
+.divArticuloImagen img {
   width: 100%;
   height: 100%;
 }
 
-.articuloImagen h2 {
+.divArticuloImagen h2 {
   position: relative;
   top: -125px;
   color: wheat;
   max-width: 70%;
   left: 30px;
 }
+#divContenidoArticulos {
+  margin-left: 30px;
+}
 
-.articulo {
+.divArticulo {
   background: rgb(243, 243, 243);
   height: 360px;
   display: inline-block;
@@ -128,27 +131,27 @@ header {
   border: solid 0.1px #ebebeb;
 }
 
-.articulo:hover,
+.divArticulo:hover,
 .navPrincipal {
   -webkit-box-shadow: 5px 5px 22px 1px rgba(0, 0, 0, 0.45);
   box-shadow: 5px 5px 22px 1px rgba(0, 0, 0, 0.45);
 }
 
-.articuloImagen {
+.divArticuloImagen {
   height: 150px;
 }
 
-.articuloDescripcion {
+.divArticuloDescripcion {
   overflow: hidden;
   height: 140px;
   margin-bottom: 15px;
 }
 
-.articuloContenido {
+.divArticuloContenido {
   padding: 10px;
 }
 
-.articuloPrecio {
+.divArticuloPrecio {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -269,7 +272,7 @@ header {
     height: 50vh;
   }
 
-  .articulo {
+  .divaArticulo {
     width: calc(100% - 10px);
     padding: 5px;
   }
@@ -312,6 +315,7 @@ header {
   .aIniciarSesion {
     padding: 1px 2px;
     line-height: 2.5;
+    margin-right: 0.8rem;
   }
 }
 
@@ -320,7 +324,7 @@ header {
     background: green;
   }
 
-  .articulo {
+  .divArticulo {
     width: calc(49% - 30px);
     padding: 15px;
   }
@@ -364,7 +368,7 @@ header {
     background: blue;
   }
 
-  .articulo {
+  .divArticulo {
     width: 32%;
   }
 
@@ -404,7 +408,7 @@ header {
     background: orange;
   }
 
-  .articulo {
+  .divArticulo {
     width: calc(24%);
     padding: 15px;
   }

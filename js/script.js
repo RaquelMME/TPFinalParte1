@@ -108,24 +108,24 @@ function armoListaArticulos() {
     if(i>3)
      i = 0;
     document.getElementById("divContenidoArticulos").innerHTML +=
-      '<div data-aos="fade-up"  data-aos-delay="0' + i + '50" class="articulo" onclick="abroDetalle(' +
+      '<div data-aos="fade-up"  data-aos-delay="0' + i + '50" class="divArticulo" onclick="abroDetalle(' +
       k +
       ');">' +
       // '<div class="articuloImagen" style=" background-image: url(img/' +
       // data[k].imagen +
       // ');">"' +
-      '<div class="articuloImagen" > <img src="img/pizarron.jpeg"/>' +
+      '<div class="divArticuloImagen" > <img src="img/pizarron.jpeg"/>' +
       '<h2 class="divFuenteImagenDetalle">' +
       data[k].nombre +
       "</h2>" +
       "</div>" +
-      '<div class="articuloContenido">' +
-      '<div class="articuloPrecio">' +
+      '<div class="divArticuloContenido">' +
+      '<div class="divArticuloPrecio">' +
       "<span>" +
       data[k].precio +
       "</span>" +
       "</div>" +
-      '<div class="articuloDescripcion">' +
+      '<div class="divArticuloDescripcion">' +
       "<span>" +
       data[k].descripcion +
       "</span>" +
@@ -146,13 +146,13 @@ function cargoDetalle(k) {
     data[k].nombre +
     "</h1><p>Detalle del curso</p>" +
     "</div> </div> " +
-    '<div class="divContenedorNosotros" class="articuloContenido">' +
-    '<div class="articuloPrecio">' +
+    '<div class="divContenedorNosotros" class="divArticuloContenido">' +
+    '<div class="divArticuloPrecio">' +
     "<span>" +
     data[k].precio +
     "</span>" +
     "</div>" +
-    '<div class="articuloDescripcion">' +
+    '<div class="divArticuloDescripcion">' +
     //"<p>" +
     data[k].descripcion +
     //"</p>" +
